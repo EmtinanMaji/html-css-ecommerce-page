@@ -5,71 +5,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
+  <meta name="description" content="Unique Art Store, Handmade candle store">
+  <meta name="keywords" content="Art, Handmade, candle" >
+  <link rel="stylesheet" href="src\styles\style.css">
+  <title>Unique Art Store</title>
 </head>
 <body>
   <header class="header" id="header">
-    <img src="Logo.png" alt="Logo" width="100">
+    <div class="Logo">
+    <img src="src\imeges\Logo.png" alt="Logo" width="100">
+   
+    <div class="Welcome">
     <h1>Welcome to Unique Art Store</h1>
+    <p>Indulge in the Elegance of Handcrafted Candles. Each Flame Tells a Story, Each Scent Awakens a Memory.</p>
+    </div>
+  </div>
+    
+    <nav>
+      <a href="#header" class="nav-link">Home</a>
+      <a href="#hero-section" class="nav-link">About Us</a>
+      <a href="#product-section" class="nav-link">Products</a>
+      <a href="#contact-section" class="nav-link">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#header">Home</a>
-    <a href="#hero">About Us</a>
-    <a href="#products">Products</a>
-    <a href="#contact-info">Contact</a>
-  </nav>
 
-  <section id="hero">
-  <div>
-    <label for="hero">About Us</label>
-    <h2>Light Up Your World</h2>
-    <p>Indulge in the Elegance of Handcrafted Candles. Each Flame Tells a Story, Each Scent Awakens a Memory.</p>
+  <section id="hero-section">
+    <h2 class="section__title">About Us:</h2>
+  <div class="About-Us">
+    <h3>Welcome to the Handmade Candle Store</h3>
+    <p>Where passion meets craftsmanship. We take pride in creating exquisite handmade candles that illuminate your spaces with warmth and beauty.  Our journey began with a simple idea to craft candles that not only provide light but also tell a story. Each candle is meticulously handcrafted using the finest ingredients to ensure a unique and enchanting experience for our customers. What sets us apart is our commitment to quality, creativity, and sustainability. We source eco-friendly materials to create candles that are not only visually stunning but also environmentally conscious. Our collection includes a variety of scents, shapes, and sizes to cater to different tastes and occasions.</p>
     <button>Shop Now</button>
-    <br>
   </div>
   </section>
 
-  <section id="products">
-  <div>
-    <label for="products">These products are provided by Unique Art Store:</label>
-    <div>
-        <img src="product1.jpg" alt="Product 1" width="200" >
+  <section id="product-section">
+    <h2 class="section__title">Products:</h2>
+  <div class="products">
+    <div class="product">
+        <img src="src\imeges\product1.jpg" alt="Product 1" width="200" >
         <h3>Product 1</h3>
-        <p>white mini bubble candle.</p>
-        <button>Buy</button>
+        <p>Mini bubble candle.</p>
+        <h3>5$</h3>
+        <button>Add to cart</button>
     </div>
 
-    <div>
-        <img src="product2.jpg" alt="Product 2" width="200">
+    <div class="product">
+        <img src="src\imeges\product2.jpg" alt="Product 2" width="200">
         <h3>Product 2</h3>
-        <p>white cloud candle.</p>
-        <button>Buy</button>
+        <p>Cloud candle.</p>
+        <h3>5$</h3>
+        <button>Add to cart</button>
         
     </div>
 
-    <div>
-        <img src="product3.jpg" alt="Product 3" width="200">
+    <div class="product">
+        <img src="src\imeges\product3.jpg" alt="Product 3" width="200">
         <h3>Product 3</h3>
-        <p>White and yellow beehive candle.</p>
-        <button>Buy</button>
+        <p>Beehive candle.</p>
+        <h3>5$</h3>
+        <button>Add to cart</button>
         
     </div>
   </div>
   </section>
 
-  <section id="reviews">
-    <div>
-      <label for="reviews">Customer Reviews</label>
-      <p>"Amazing products! Fast delivery and great customer service." - Savana Ibrahem</p>
-      <p>"Highly recommended. I love the quality of their items." - Yamen Esmail</p>
+  <section id="reviews-section">
+    <h2 class="section__title">Reviews:</h2>
+    <div class="reviews">
+      <p class="review">"Amazing products! Fast delivery and great customer service." - Savana Ibrahem</p>
+      <p class="review">"Highly recommended. I love the quality of their items." - Yamen Esmail</p>
     </div>
   </section>
 
-  <section id="newsletter">
-    <label for="newsletter">Subscribe to Our Newsletter</label>
-    <form>
+  <section id="newsletter-section">
+    <h2 class="section__title">Sign up for the latest Rituals news and exclusive offers:</h2>
+
+    <form class="submit">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <button type="submit">Subscribe</button>
@@ -77,26 +89,27 @@
   </section>
 
   <footer>
-    <div id="footer-links">
-      <label for="footer-links">With Unique Art. All rights reserved.</label>
-      <br>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Shipping Information</a>
+    <div class="footer-links">
+        <a class="footer-link" href="#">Terms of Service</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Shipping Information</a>
     </div>
 
-    <div id="contact-info">
-      <label for="contact-info">Contact us at:</label>
-        <p>Our Email: Emtinanmaji@gmail.com</p>
-
+    <div class="contact-info" id="contact-section">
+      <label for="contact-info"> Contact us at: </label>
+      <a role="button" href="mailto:Unique_art@example.com" class="icon"><img src="src\imeges\mail.png" alt="mial icon" width="30" ></a>
+      <a role="button" href="https://iwtsp.com/966546392178" class="icon"><img src="src\imeges\whatsapp.png" alt="whatsapp icon" width="30" ></a>
+      <a role="button" href="https://www.instagram.com/unique_art__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon"> <img src="src\imeges\instagram.png" alt="instagram icon" width="30" ></a>
     </div>
 
-    <div id="social-icons">
-      <label for="contact-info">Our social media</label>
-      <a role="button" href="https://l.instagram.com/?u=https%3A%2F%2Fiwtsp.com%2F966546392178&e=AT3v1cB0xJ9P3ljK96e-ArRhCume--TECu21rbP3MLXixid2DzvjtqKx4bJYgsPnnxT1W9pgsVO6ynOjjQXe-jiMbcnkO8ckqdZz_qol-ImuBTNWJHHOwg"><img src="whatsapp.png" alt="whatsapp icon" width="30" ></a>
-      <a role="button" href="https://www.instagram.com/unique_art__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img src="instagram.png" alt="instagram icon" width="30" ></a>
-      
+    
+    <div class="payment-method">
+      <p class="therd-line-left">All rights reserved © Unique Art 2024 </p>
+      <img src="src\imeges\apple-pay.png" alt="applepay icon" width="30" >
+      <img src="src\imeges\visa-logo.png" alt="visa icon" width="30" >
+      <img src="src\imeges\payment-method.png"  alt="Payment icon" width="30" >
     </div>
+  
   </footer>
 
 
