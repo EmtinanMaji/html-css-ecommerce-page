@@ -1,37 +1,99 @@
-header{
-    background-color: white;
-    position: sticky;
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.header{
+    position:sticky;
     top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ede0d4;
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10px;
+    display: flex;
+    justify-content:center;
+ 
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
     
 }
-.Logo{
-    display: flex;
-    flex-direction: row;
+
+.nav-items a img{
+    width: 30px;
 }
-.Welcome{
+  
+.links-container{
+    width: 100%;
     display: flex;
-    flex-direction:column;
-    font-size: 10px;
-    
-}
-nav {
-    text-align: center;
+    padding: 10px 10vw;
     justify-content: center;
-    background-color: #C6A58A;
-    padding: 10px;
+    list-style: none;
     
-    
-  }
-.nav-link {
-    color: black;
+}
+
+.link{
+    padding: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
-    margin:0 50px;
+    color: black;
 }
-.nav-link:hover{
-    color: white;
+
+.link:hover{
+    
+    font-size: larger;
 }
+#hero-section{
+    background-image: url('https://github.com/EmtinanMaji/sda-2-online-html-css-ecommerce-landing-page/blob/main/src/imeges/Cloud-BG.jpg');
+
+}
+
+.hero-section {
+    width: 100%;
+    height: 600px;
+    background-image: url('../imeges/Cloud-BG.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #C6A58A;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    justify-content:end;
+}
+
+button:hover {
+    opacity: .7;
+}
+
 .section__title{
+    padding:20px;
     text-align: center;
 }
 .About-Us {
@@ -41,11 +103,13 @@ nav {
     text-align: center;
 }
 .products{
+    background-color: #ede0d4;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
     flex-direction: row;
+    
 }
 
 p{
@@ -57,20 +121,50 @@ p{
     padding: 10px;
     margin: 10px;
 }
+
+.product button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ede0d4;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    justify-content:end;
+}
+.product button:hover {
+    opacity: .7;
+}
+.product-img:hover{
+    size: zoom-in;
+}
 .reviews {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
-    flex-direction:column;
+    background-color: #ede0d4;
+    flex-direction: row;
 }
+
 .review {
     background-color: #C6A58A;
     padding: 10px;
     margin: 10px;
 }
+.newsletter{
+    background-color: #ede0d4;
+    padding: 10px;
+    margin: 10px;
+}
+#email{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: #ede0d4;
+    width: 250px;
+    height: 20px;
+}
 .submit {
-    background-color: #C6A58A;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -81,27 +175,50 @@ footer{
     width: 100%;
     bottom: 0;
   }
-.footer-links,.contact-info{
+
+.frist-line{
     display: flex;
     justify-content: center;
-    background-color: #C6A58A;
+    flex-wrap: wrap;
     padding: 10px;
-    
+    flex-direction:column;
 }
-.footer-link {
+.about{
+    background-color: black;
+    width: 100px;
+}
+.frist-line .footer-link {
     color: black;
     text-decoration: none;
     margin:0 30px;
+    flex-direction: column;
 }
-.footer-link:hover{
-    color: white;
+.frist-line .contact-info{
+    flex-direction: column;
 }
 .icon{
     margin:0 10px;
+    flex-direction: row;
+}
+
+.therd-line{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: row;
+
 }
 .therd-line-left{
-    font-size: 10px;
+    font-size: 15px;
+}
+.Payment-method{
+    padding: 0 10px;
+    margin: 0 5px;
+}
+@media screen and (max-width: 600px) {
+    .product{
+        grid-template-columns: auto auto;  
+    }
     
 }
-
-
